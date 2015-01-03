@@ -56,7 +56,7 @@ For ($i=1; $i -le 14; $i++) {
 	}
 	Set-Date -Date (Get-Date).AddDays(1)
 }
-Set-Date -Date (Get-Date).AddDays(5)
+Set-Date -Date (Get-Date).AddDays(6)
 For ($i=1; $i -le 2; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
