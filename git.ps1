@@ -251,7 +251,7 @@ For ($i=1; $i -le 1; $i++) {
 }
 
 #2014 İ
-Set-Date -Date (Get-Date).AddDays(8)
+Set-Date -Date (Get-Date).AddDays(13)
 For ($i=1; $i -le 14; $i++) {
 	if($i -eq 2){}
 	elseif($i -eq 9){}
