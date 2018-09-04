@@ -177,55 +177,7 @@ For ($i=1; $i -le 2; $i++) {
 	git commit -m "file deleted: $i"	
 	Set-Date -Date (Get-Date).AddDays(1)
 }
-Set-Date -Date (Get-Date).AddDays(7)
-For ($i=1; $i -le 2; $i++) {
-	For ($j=11; $j -ge 1; $j--) {
-		$j | Set-Content 'datetime.txt'
-		git add .
-		git commit -m "$i, $j"
-	}
-	Remove-Item * -Filter *.txt
-	git add .
-	git commit -m "file deleted: $i"	
-	Set-Date -Date (Get-Date).AddDays(1)
-}
-Set-Date -Date (Get-Date).AddDays(7)
-For ($i=1; $i -le 5; $i++) {
-	For ($j=11; $j -ge 1; $j--) {
-		$j | Set-Content 'datetime.txt'
-		git add .
-		git commit -m "$i, $j"
-	}
-	Remove-Item * -Filter *.txt
-	git add .
-	git commit -m "file deleted: $i"	
-	Set-Date -Date (Get-Date).AddDays(1)
-}
-Set-Date -Date (Get-Date).AddDays(3)
-For ($i=1; $i -le 5; $i++) {
-	For ($j=11; $j -ge 1; $j--) {
-		$j | Set-Content 'datetime.txt'
-		git add .
-		git commit -m "$i, $j"
-	}
-	Remove-Item * -Filter *.txt
-	git add .
-	git commit -m "file deleted: $i"	
-	Set-Date -Date (Get-Date).AddDays(1)
-}
-Set-Date -Date (Get-Date).AddDays(2)
-For ($i=1; $i -le 2; $i++) {
-	For ($j=11; $j -ge 1; $j--) {
-		$j | Set-Content 'datetime.txt'
-		git add .
-		git commit -m "$i, $j"
-	}
-	Remove-Item * -Filter *.txt
-	git add .
-	git commit -m "file deleted: $i"	
-	Set-Date -Date (Get-Date).AddDays(1)
-}
-Set-Date -Date (Get-Date).AddDays(5)
+Set-Date -Date (Get-Date).AddDays(6)
 For ($i=1; $i -le 2; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
@@ -238,6 +190,54 @@ For ($i=1; $i -le 2; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 Set-Date -Date (Get-Date).AddDays(6)
+For ($i=1; $i -le 5; $i++) {
+	For ($j=11; $j -ge 1; $j--) {
+		$j | Set-Content 'datetime.txt'
+		git add .
+		git commit -m "$i, $j"
+	}
+	Remove-Item * -Filter *.txt
+	git add .
+	git commit -m "file deleted: $i"	
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(2)
+For ($i=1; $i -le 5; $i++) {
+	For ($j=11; $j -ge 1; $j--) {
+		$j | Set-Content 'datetime.txt'
+		git add .
+		git commit -m "$i, $j"
+	}
+	Remove-Item * -Filter *.txt
+	git add .
+	git commit -m "file deleted: $i"	
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(1)
+For ($i=1; $i -le 2; $i++) {
+	For ($j=11; $j -ge 1; $j--) {
+		$j | Set-Content 'datetime.txt'
+		git add .
+		git commit -m "$i, $j"
+	}
+	Remove-Item * -Filter *.txt
+	git add .
+	git commit -m "file deleted: $i"	
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(4)
+For ($i=1; $i -le 2; $i++) {
+	For ($j=11; $j -ge 1; $j--) {
+		$j | Set-Content 'datetime.txt'
+		git add .
+		git commit -m "$i, $j"
+	}
+	Remove-Item * -Filter *.txt
+	git add .
+	git commit -m "file deleted: $i"	
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(5)
 For ($i=1; $i -le 1; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
@@ -251,7 +251,7 @@ For ($i=1; $i -le 1; $i++) {
 }
 
 #2014 İ
-Set-Date -Date (Get-Date).AddDays(7)
+Set-Date -Date (Get-Date).AddDays(8)
 For ($i=1; $i -le 14; $i++) {
 	if($i -eq 2){}
 	elseif($i -eq 9){}
@@ -293,7 +293,7 @@ For ($i=1; $i -le 2; $i++) {
 	git commit -m "file deleted: $i"	
 	Set-Date -Date (Get-Date).AddDays(1)
 }
-Set-Date -Date (Get-Date).AddDays(8)
+Set-Date -Date (Get-Date).AddDays(7)
 For ($i=1; $i -le 1; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
@@ -305,7 +305,7 @@ For ($i=1; $i -le 1; $i++) {
 	git commit -m "file deleted: $i"	
 	Set-Date -Date (Get-Date).AddDays(1)
 }
-Set-Date -Date (Get-Date).AddDays(8)
+Set-Date -Date (Get-Date).AddDays(7)
 For ($i=1; $i -le 2; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
@@ -329,6 +329,5 @@ For ($i=1; $i -le 14; $i++) {
 	git commit -m "file deleted: $i"	
 	Set-Date -Date (Get-Date).AddDays(1)
 }
-
 
 Set-Date -Date $tarih
