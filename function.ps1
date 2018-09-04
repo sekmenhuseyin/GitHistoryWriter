@@ -1,6 +1,8 @@
-$tarih = Get-Date
-#2014 H
-Set-Date -Date 1/6/2014
+ param (
+    [Parameter(Mandatory=$true)][string]$dt
+ )
+ Set-Date -Date $dt
+#H
 For ($i=1; $i -le 14; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
@@ -37,7 +39,7 @@ For ($i=1; $i -le 14; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 
-#2014 Ü
+#Ü
 Set-Date -Date (Get-Date).AddDays(7)
 For ($i=1; $i -le 14; $i++) {
 	if($i -eq 2){}
@@ -83,7 +85,7 @@ For ($i=1; $i -le 14; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 
-#2014 S
+#S
 Set-Date -Date (Get-Date).AddDays(7)
 For ($i=1; $i -le 14; $i++) {
 	if($i -eq 5){}
@@ -120,7 +122,7 @@ For ($i=1; $i -le 14; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 
-#2014 E
+#E
 Set-Date -Date (Get-Date).AddDays(7)
 For ($i=1; $i -le 14; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
@@ -155,7 +157,7 @@ For ($i=1; $i -le 14; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 
-#2014 Y
+#Y
 Set-Date -Date (Get-Date).AddDays(7)
 For ($j=11; $j -ge 1; $j--) {
 	$j | Set-Content 'datetime.txt'
@@ -250,7 +252,7 @@ For ($i=1; $i -le 1; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 
-#2014 İ
+#İ
 Set-Date -Date (Get-Date).AddDays(13)
 For ($i=1; $i -le 14; $i++) {
 	if($i -eq 2){}
@@ -268,7 +270,7 @@ For ($i=1; $i -le 14; $i++) {
 	Set-Date -Date (Get-Date).AddDays(1)
 }
 
-#2014 N
+#N
 Set-Date -Date (Get-Date).AddDays(7)
 For ($i=1; $i -le 14; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
@@ -329,5 +331,3 @@ For ($i=1; $i -le 14; $i++) {
 	git commit -m "file deleted: $i"	
 	Set-Date -Date (Get-Date).AddDays(1)
 }
-
-Set-Date -Date $tarih
