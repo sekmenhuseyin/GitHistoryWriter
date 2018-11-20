@@ -103,3 +103,87 @@ For ($i=1; $i -le 14; $i++) {
 	}
 	Set-Date -Date (Get-Date).AddDays(1)
 }
+
+#Y
+Set-Date -Date (Get-Date).AddDays(7)
+For ($j=11; $j -ge 1; $j--) {
+	$j | Set-Content 'datetime.txt'
+	git add .
+	git commit -m "$i, $j"
+}
+Remove-Item * -Filter *.txt
+git add .
+git commit -m "file deleted: $i"	
+Set-Date -Date (Get-Date).AddDays(7)
+For ($i=1; $i -le 2; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(6)
+For ($i=1; $i -le 2; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(6)
+For ($i=1; $i -le 5; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(2)
+For ($i=1; $i -le 5; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(1)
+For ($i=1; $i -le 2; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(4)
+For ($i=1; $i -le 2; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(5)
+For ($i=1; $i -le 1; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+
+#İ
+Set-Date -Date (Get-Date).AddDays(13)
+For ($i=1; $i -le 14; $i++) {
+	if($i -eq 2){}
+	elseif($i -eq 9){}
+	else{
+		AddCommits
+	}
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+
+#N
+Set-Date -Date (Get-Date).AddDays(7)
+For ($i=1; $i -le 14; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(1)
+For ($i=1; $i -le 2; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(7)
+For ($i=1; $i -le 1; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(7)
+For ($i=1; $i -le 2; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
+Set-Date -Date (Get-Date).AddDays(1)
+For ($i=1; $i -le 14; $i++) {
+	AddCommits
+	Set-Date -Date (Get-Date).AddDays(1)
+}
