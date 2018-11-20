@@ -2,6 +2,23 @@
     [Parameter(Mandatory=$true)][string]$dt
  )
  Set-Date -Date $dt
+ 
+ function GenerateRandomString{
+	return -join ((65..90) + (97..122) | Get-Random -Count 5 | % {[char]$_})
+ }
+ 
+ function AddCommits {
+	For ($j=11; $j -ge 1; $j--) {
+		$j | Set-Content 'datetime.txt'
+		git add .
+		$r = GenerateRandomString
+		git commit -m "$r, $i, $j"
+	}
+	Remove-Item * -Filter *.txt
+	git add .
+	git commit -m "file deleted: $r, $i"	
+}
+
 #H
 For ($i=1; $i -le 14; $i++) {
 	For ($j=11; $j -ge 1; $j--) {
