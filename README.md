@@ -1,4 +1,7 @@
 # GitHistoryWriter
 Git History Writer
 
-Copy ps1 file to your computer. Create a repo for that file. run the file from powershell. then publish to github
+1. Copy *.ps1 files to your computer. 
+1. Create a repo for that files. 
+1. run app.ps1 from powershell[administrator]. 
+1. then publish to github
