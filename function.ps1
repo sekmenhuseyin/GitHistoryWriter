@@ -8,7 +8,7 @@
  }
  
  function AddCommits {
-	For ($j=19; $j -ge 1; $j--) {
+	For ($j=9; $j -ge 1; $j--) {
 		$j | Set-Content 'datetime.txt'
 		git add .
 		$r = GenerateRandomString
@@ -16,6 +16,7 @@
 	}
 	Remove-Item * -Filter *.txt
 	git add .
+	$r = Get-Date
 	git commit -m "file deleted: $r, $i"	
 }
 
